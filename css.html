@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS - Dhiraj's Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><i class="fas fa-code me-2"></i>My ePortfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="fullstack.html">Full Stack Development</a></li>
+          <li class="nav-item"><a class="nav-link" href="html.html">HTML</a></li>
+          <li class="nav-item"><a class="nav-link active" href="css.html">CSS</a></li>
+          <li class="nav-item"><a class="nav-link" href="bootstrap.html">Bootstrap</a></li>
+          <li class="nav-item"><a class="nav-link" href="js.html">JavaScript</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="container py-5">
+    <h2 class="section-title">CSS Fundamentals & Demos</h2>
+    <p class="section-subtitle">Learn how CSS styles your web page with examples you can see live.</p>
+
+    <!-- 1. CSS Inclusion Methods -->
+    <article class="demo-area mb-4">
+      <h4>1. CSS Inclusion Methods</h4>
+      <pre><code>&lt;!-- Inline CSS --&gt;
+&lt;p style="color: red;"&gt;This is inline CSS&lt;/p&gt;
+
+&lt;!-- Internal CSS --&gt;
+&lt;style&gt;
+  .internal-demo { color: blue; font-weight: bold; }
+&lt;/style&gt;
+&lt;div class="internal-demo"&gt;This text uses internal CSS.&lt;/div&gt;
+
+&lt;!-- External CSS --&gt;
+&lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;div class="external-demo"&gt;This text uses external CSS&lt;/div&gt;
+</code></pre>
+      <p><i class="fas fa-angle-right me-2"></i>Inline CSS:</p>
+      <p style="color:#2a9d8f; font-weight:bold;">This text is styled with inline CSS.</p>
+      <p><i class="fas fa-angle-right me-2"></i>Internal CSS:</p>
+      <div class="internal-demo">This text uses internal CSS.</div>
+      <p><i class="fas fa-angle-right me-2"></i>External CSS:</p>
+      <div class="external-demo">This text uses external CSS from <code>styles.css</code></div>
+    </article>
+
+    <!-- 2. CSS Selectors -->
+    <article class="demo-area mb-4">
+      <h4>2. CSS Selectors</h4>
+      <pre><code>&lt;!-- Class Selector --&gt;
+&lt;p class="class-demo"&gt;This text uses a class selector&lt;/p&gt;
+
+&lt;!-- ID Selector --&gt;
+&lt;p id="id-demo"&gt;This text uses an ID selector&lt;/p&gt;
+
+&lt;!-- Tag Selector --&gt;
+&lt;p&gt;This text uses a tag selector&lt;/p&gt;
+</code></pre>
+      <p>Selectors target HTML elements to apply styles. Common types are class, ID, and tag selectors.</p>
+      <p class="class-demo">This uses a class selector (<code>.class-demo</code>)</p>
+      <p id="id-demo">This uses an ID selector (<code>#id-demo</code>)</p>
+      <p>This uses a tag selector (<code>p</code>)</p>
+    </article>
+
+    <!-- 3. Box Model -->
+    <article class="demo-area mb-4">
+      <h4>3. Box Model</h4>
+      <pre><code>&lt;div class="box-model-demo"&gt;Box Model Example&lt;/div&gt;
+
+&lt;!-- CSS --&gt;
+.box-model-demo {
+  padding: 20px;
+  border: 2px solid black;
+  margin: 10px;
+}
+</code></pre>
+      <p>Every element in CSS is a rectangular box, composed of content, padding, border, and margin.</p>
+      <div class="box-model-demo">Box Model Example</div>
+    </article>
+
+    <!-- 4. Colors & Backgrounds -->
+    <article class="demo-area mb-4">
+      <h4>4. Colors & Backgrounds</h4>
+      <pre><code>&lt;p class="text-red"&gt;Red Text Example&lt;/p&gt;
+&lt;div class="bg-yellow"&gt;Yellow Background Example&lt;/div&gt;</code></pre>
+      <p>CSS allows you to change text colors, backgrounds, and apply gradients or images.</p>
+      <p class="text-red">Red Text Example</p>
+      <div class="bg-yellow">Yellow Background Example</div>
+    </article>
+
+    <!-- 5. Fonts & Text -->
+    <article class="demo-area mb-4">
+      <h4>5. Fonts & Text</h4>
+      <pre><code>&lt;p class="font-demo"&gt;Custom font and size example&lt;/p&gt;</code></pre>
+      <p>Fonts, sizes, weights, and text styles can all be controlled with CSS to improve readability and design.</p>
+      <p class="font-demo">Custom font and size example</p>
+    </article>
+
+    <!-- 6. Flexbox Layout -->
+    <article class="demo-area mb-4">
+      <h4>6. Flexbox Layout</h4>
+      <pre><code>&lt;div class="flex-demo"&gt;
+  &lt;div class="flex-item"&gt;Flex 1&lt;/div&gt;
+  &lt;div class="flex-item"&gt;Flex 2&lt;/div&gt;
+  &lt;div class="flex-item"&gt;Flex 3&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- CSS --&gt;
+.flex-demo { display: flex; gap: 10px; }
+.flex-item { padding: 20px; background: #e9c46a; }</code></pre>
+      <p>Flexbox is a layout model that allows elements to align and distribute space efficiently within a container.
+      </p>
+      <div class="flex-demo">
+        <div class="flex-item">Flex 1</div>
+        <div class="flex-item">Flex 2</div>
+        <div class="flex-item">Flex 3</div>
+      </div>
+    </article>
+
+    <!-- 7. Transitions & Animations -->
+    <article class="demo-area mb-4">
+      <h4>7. CSS Transitions & Animations</h4>
+      <pre><code>&lt;button class="hover-btn"&gt;Hover Me!&lt;/button&gt;
+
+&lt;!-- CSS --&gt;
+.hover-btn {
+  transition: background 0.3s;
+}
+.hover-btn:hover {
+  background: #2a9d8f;
+}</code></pre>
+      <p>CSS transitions animate changes to properties, and keyframes allow complex animations without JavaScript.</p>
+      <button class="hover-btn" aria-label="Hover example button">Hover Me!</button>
+    </article>
+
+    <!-- 8. Grid Layout -->
+    <article class="demo-area mb-4">
+      <h4>8. CSS Grid Layout</h4>
+      <pre><code>&lt;div class="grid-demo"&gt;
+  &lt;div class="grid-item"&gt;1&lt;/div&gt;
+  &lt;div class="grid-item"&gt;2&lt;/div&gt;
+  &lt;div class="grid-item"&gt;3&lt;/div&gt;
+  &lt;div class="grid-item"&gt;4&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- CSS --&gt;
+.grid-demo { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+.grid-item { padding: 20px; background: #f4a261; }</code></pre>
+      <p>Grid layout allows you to arrange elements in rows and columns with precise control over spacing and alignment.
+      </p>
+      <div class="grid-demo">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+      </div>
+    </article>
+
+    <!-- 9. Hover & Pseudo-elements -->
+    <article class="demo-area mb-4">
+      <h4>9. CSS-Only Effects</h4>
+      <pre><code>&lt;div class="hover-box"&gt;Hover Me&lt;/div&gt;
+
+&lt;!-- CSS Hover --&gt;
+.hover-box:hover { background: #2a9d8f; color: white; }
+
+&lt;!-- Keyframe Animation --&gt;
+.animation-demo { animation: bounce 2s infinite; }
+
+@keyframes bounce { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-20px); } }
+
+&lt;!-- Pseudo-element --&gt;
+.pseudo-demo::after { content: ' - after text'; }</code></pre>
+      <p>This section demonstrates CSS hover effects, animations, and pseudo-elements without using JavaScript.</p>
+
+      <!-- Hover Effects -->
+      <p>Hover over the boxes to see CSS hover effects:</p>
+      <div class="hover-demo">
+        <div class="hover-box">Hover Me</div>
+        <div class="hover-box">Hover Me</div>
+        <div class="hover-box">Hover Me</div>
+      </div>
+
+      <!-- Keyframe Animation -->
+      <p class="mt-3">CSS Animation Example:</p>
+      <div class="animation-demo">Animated Box</div>
+
+      <!-- Pseudo-element Example -->
+      <p class="mt-3">Pseudo-element Example:</p>
+      <div class="pseudo-demo">Hover me to see ::after effect</div>
+    </article>
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4 mt-5">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-md-4">
+          <h5 class="footer-heading">Contact</h5>
+          <div class="footer-contact">
+            <p><i class="fas fa-user"></i> Dhiraj Bhandari</p>
+            <p><i class="fas fa-envelope"></i> bwit24b.dhj@ismt.edu.np</p>
+            <p><i class="fas fa-phone"></i> +977 9845541670</p>
+            <p><i class="fas fa-map-marker-alt"></i> Butwal, Nepal</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h5 class="footer-heading">Quick Links</h5>
+          <div class="footer-links d-flex flex-column">
+            <a href="fullstack.html">Full Stack Development</a>
+            <a href="html.html">HTML</a>
+            <a href="css.html" class="active">CSS</a>
+            <a href="bootstrap.html">Bootstrap</a>
+            <a href="js.html">JavaScript</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h5 class="footer-heading">Connect</h5>
+          <div class="social-links d-flex gap-3">
+            <a href="https://github.com/dhirubhaii" target="_blank" rel="noopener" title="GitHub"><i
+                class="fab fa-github fa-lg"></i></a>
+            <a href="https://www.linkedin.com/in/dhirajbhandari-userprofile/" target="_blank" rel="noopener"
+              title="LinkedIn"><i class="fab fa-linkedin-in fa-lg"></i></a>
+            <a href="https://www.facebook.com/Dhirajbhandariii" target="_blank" rel="noopener" title="Facebook"><i
+                class="fab fa-facebook-f fa-lg"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright text-center mt-4 text-white-50">
+        <p>© <span id="year"></span> Dhiraj Bhandari. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <a href="#" class="back-to-top" aria-label="Back to top">
+    <i class="fas fa-arrow-up" aria-hidden="true"></i>
+  </a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

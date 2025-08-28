@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bootstrap - Dhiraj's Portfolio</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link href="styles.css" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><i class="fas fa-code me-2"></i>My ePortfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="fullstack.html">Full Stack Development</a></li>
+          <li class="nav-item"><a class="nav-link" href="html.html">HTML</a></li>
+          <li class="nav-item"><a class="nav-link" href="css.html">CSS</a></li>
+          <li class="nav-item"><a class="nav-link active" href="bootstrap.html" aria-current="page">Bootstrap</a></li>
+          <li class="nav-item"><a class="nav-link" href="js.html">JavaScript</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Section -->
+  <section class="container py-5">
+
+    <h2 class="section-title text-center">Bootstrap Basics</h2>
+    <p class="section-subtitle text-center">Bootstrap helps in building responsive websites quickly and easily with
+      pre-built CSS and JS components.</p>
+
+    <!-- What is Bootstrap -->
+    <article class="mb-5">
+      <h4>What is Bootstrap?</h4>
+      <p>Bootstrap is a popular open-source front-end framework that includes CSS and JavaScript components you can use
+        for responsive, mobile-first web projects.</p>
+      <p>Key features: grid system, buttons, forms, typography, navigation, modals, tooltips, accordions, and more.</p>
+    </article>
+
+    <!-- Demo 1: Buttons and Grid -->
+    <article class="demo-area">
+      <h4>Responsive Grid and Buttons</h4>
+      <p>The grid system allows you to create flexible page layouts that adjust to different screen sizes. Columns can
+        resize, combine, or stack depending on the device. Pre-styled buttons like <code>btn-success</code> ensure a
+        consistent look with hover, active, and focus states.</p>
+
+      <div class="row g-3 mb-3">
+        <div class="col-md-6">
+          <button type="button" class="btn btn-success w-100 hover-btn">Bootstrap Success Button</button>
+        </div>
+        <div class="col-md-6">
+          <div class="border rounded p-3 text-center bg-light">This is a Bootstrap Grid Column</div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Demo 1b: Utility Classes -->
+    <article class="demo-area">
+      <h4>Bootstrap Utility Classes</h4>
+      <p>Utility classes let you quickly apply spacing, colors, borders, and background styles without writing custom
+        CSS. They save time and keep designs consistent.</p>
+      <div class="d-flex gap-3 flex-wrap justify-content-center">
+        <div class="p-3 bg-primary text-white rounded">Primary Background</div>
+        <div class="p-3 bg-success text-white rounded">Success Background</div>
+        <div class="p-3 bg-warning text-dark rounded">Warning Background</div>
+        <div class="p-3 bg-light text-dark border rounded">Light Background</div>
+      </div>
+    </article>
+
+    <!-- Demo 2: Cards -->
+    <article class="demo-area">
+      <h4>Bootstrap Cards</h4>
+      <p>Cards are flexible containers for images, text, and actions. They are widely used for feature blocks, blog
+        posts,
+        and product listings.</p>
+      <ul>
+        <li><strong>Card with Image:</strong> Combines image, title, text, and button.</li>
+        <li><strong>Card without Image:</strong> Works without media and can use border styles for emphasis.</li>
+        <li><strong>Light Background Card:</strong> Uses contextual classes like <code>bg-light</code> for highlighting.
+        </li>
+      </ul>
+
+      <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="https://picsum.photos/350/150" class="card-img-top" alt="Card Image 1" />
+
+            <div class="card-body">
+              <h5 class="card-title">Card Title 1</h5>
+              <p class="card-text">This card contains supporting text below as a natural lead-in to additional
+                content.</p>
+              <a href="#" class="btn btn-primary hover-btn">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-4">
+          <div class="card h-100 text-center border-primary shadow-sm">
+            <div class="card-body">
+              <i class="fa-solid fa-layer-group fs-1 text-primary mb-3"></i>
+              <h5 class="card-title">Card Without Image</h5>
+              <p class="card-text">Cards can work without images and have different border styles.</p>
+              <a href="#" class="btn btn-warning">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-4">
+          <div class="card h-100 bg-light shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Light Background Card</h5>
+              <p class="card-text">Using contextual background classes inside cards for emphasis.</p>
+              <a href="#" class="btn btn-warning">Get Started</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+
+    <!-- Demo 3: Form -->
+    <article class="demo-area">
+      <h4>Demo: Bootstrap Form with Validation</h4>
+      <p>Forms are enhanced with validation classes to give users feedback immediately. Required fields like Name and
+        Email show error messages if left blank. Labels and ARIA attributes make the form accessible for screen readers.
+      </p>
+
+      <form id="fullstack-form" class="needs-validation" novalidate>
+        <div class="mb-3">
+          <label for="username" class="form-label">Name <span class="text-danger">*</span></label>
+          <input type="text" class="form-control" id="username" aria-describedby="usernameFeedback"
+            placeholder="Your name" required />
+          <div id="usernameFeedback" class="invalid-feedback">Please enter your name.</div>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
+          <input type="email" class="form-control" id="email" aria-describedby="emailFeedback"
+            placeholder="name@example.com" required />
+          <div id="emailFeedback" class="invalid-feedback">Please enter a valid email.</div>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" rows="3" placeholder="Your message here"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary hover-btn">Submit</button>
+      </form>
+
+      <!-- Feedback will appear here -->
+      <div id="fullstack-result" class="mt-3" tabindex="-1"></div>
+    </article>
+
+
+    <!-- Demo 4: Bootstrap Modal -->
+    <article class="demo-area">
+      <h4>Bootstrap Modal</h4>
+      <p>Modals are overlays that display content without leaving the page. They are useful for dialogs, forms, or
+        notifications. Bootstrap handles focus trapping and keyboard accessibility automatically.</p>
+
+      <button type="button" class="btn btn-primary hover-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Launch Modal
+      </button>
+
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalLabel">Bootstrap Modal</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              This is a modal example. It overlays content with focus trapping and accessibility support.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary hover-btn" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+
+    <!-- Demo 5: Tooltip -->
+    <article class="demo-area">
+      <h4>Bootstrap Tooltip</h4>
+      <p>Tooltips display small info boxes when hovering or focusing on an element. They’re useful for extra context,
+        explaining icons, or clarifying form fields.</p>
+
+      <button type="button" class="btn btn-secondary hover-btn" data-bs-toggle="tooltip" data-bs-placement="top"
+        title="Tooltip on top">
+        Hover me
+      </button>
+    </article>
+
+    <!-- Demo 6: Accordion -->
+    <article class="demo-area">
+      <h4>Bootstrap Accordion</h4>
+      <p>Accordions let you toggle the visibility of content panels. They’re ideal for FAQs, previews, or multi-step
+        guides. Only one section is expanded at a time for better readability.</p>
+
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              Accordion Item #1
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              This is the first item's accordion body.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Accordion Item #2
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              This is the second item's accordion body.
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4 mt-5">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-md-4">
+          <h5 class="footer-heading">Contact</h5>
+          <div class="footer-contact">
+            <p><i class="fas fa-user"></i> Dhiraj Bhandari</p>
+            <p><i class="fas fa-envelope"></i> bwit24b.dhj@ismt.edu.np</p>
+            <p><i class="fas fa-phone"></i> +977 9845541670</p>
+            <p><i class="fas fa-map-marker-alt"></i> Butwal, Nepal</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h5 class="footer-heading">Quick Links</h5>
+          <div class="footer-links d-flex flex-column">
+            <a href="fullstack.html">Full Stack Development</a>
+            <a href="html.html">HTML</a>
+            <a href="css.html">CSS</a>
+            <a href="bootstrap.html" class="active">Bootstrap</a>
+            <a href="js.html">JavaScript</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h5 class="footer-heading">Connect</h5>
+          <div class="social-links d-flex gap-3">
+            <a href="https://github.com/dhirubhaii" target="_blank" rel="noopener" title="GitHub"><i
+                class="fab fa-github fa-lg"></i></a>
+            <a href="https://www.linkedin.com/in/dhirajbhandari-userprofile/" target="_blank" rel="noopener"
+              title="LinkedIn"><i class="fab fa-linkedin-in fa-lg"></i></a>
+            <a href="https://www.facebook.com/Dhirajbhandariii" target="_blank" rel="noopener" title="Facebook"><i
+                class="fab fa-facebook-f fa-lg"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright text-center mt-4 text-white-50">
+        <p>© <span id="year"></span> Dhiraj Bhandari. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <a href="#" class="back-to-top" aria-label="Back to top" title="Back to top">
+    <i class="fas fa-arrow-up" aria-hidden="true"></i>
+  </a>
+
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+
+</html>

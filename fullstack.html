@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Full Stack Development - Dhiraj's Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" aria-label="Primary Navigation">
+    <div class="container">
+      <a class="navbar-brand" href="index.html" title="Home"><i class="fas fa-code me-2"></i>My ePortfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html" title="Home">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="fullstack.html" aria-current="page"
+              title="Full Stack Development">Full Stack Development</a></li>
+          <li class="nav-item"><a class="nav-link" href="html.html" title="HTML">HTML</a></li>
+          <li class="nav-item"><a class="nav-link" href="css.html" title="CSS">CSS</a></li>
+          <li class="nav-item"><a class="nav-link" href="bootstrap.html" title="Bootstrap">Bootstrap</a></li>
+          <li class="nav-item"><a class="nav-link" href="js.html" title="JavaScript">JavaScript</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="pt-5 mt-4">
+    <section class="content-section" aria-labelledby="fullstack-title">
+      <div class="container">
+        <h2 id="fullstack-title" class="section-title text-center">Full Stack Development</h2>
+        <div class="row mb-5">
+          <div class="col-lg-8 mx-auto text-center">
+            <p class="section-subtitle">
+              Full Stack Development involves working on both the front-end (client-side) and back-end
+              (server-side)
+              of web applications, requiring a diverse skill set across multiple technologies.
+            </p>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <!-- Left Column: Full Stack Info -->
+          <div class="col-md-6">
+            <h3><i class="fas fa-layer-group me-2" aria-hidden="true"></i>What is Full Stack Development?</h3>
+            <p>Full Stack Development refers to the process of designing and building complete web applications that
+              involve both frontend and backend
+              technologies. A Full Stack Developer is skilled in multiple areas such as user interface design,
+              client-side scripting, server-side programming,
+              databases, and deployment.</p>
+
+            <h4 class="mt-4"><i class="fas fa-cogs me-2" aria-hidden="true"></i>Key Responsibilities</h4>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Designing and implementing user interfaces for responsive web pages</li>
+              <li class="list-group-item">Writing client-side scripts and frontend logic</li>
+              <li class="list-group-item">Developing server-side logic, databases, and APIs</li>
+              <li class="list-group-item">Ensuring cross-platform optimization and responsiveness</li>
+              <li class="list-group-item">Collaborating with designers and team members</li>
+            </ul>
+          </div>
+
+          <!-- Right Column: Demo Form -->
+          <div class="col-md-6">
+            <div class="demo-area" role="region" aria-live="polite" aria-label="Full stack development demo form">
+              <h4><i class="fas fa-laptop-code me-2" aria-hidden="true"></i>Frontend-Backend Demo</h4>
+              <p>This form demonstrates how data is sent from the frontend to the backend:</p>
+              <form id="fullstack-form" novalidate>
+                <div class="mb-3">
+                  <label for="username" class="form-label">Username:</label>
+                  <input type="text" class="form-control" id="username" required placeholder="Enter your username"
+                    aria-required="true" />
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email:</label>
+                  <input type="email" class="form-control" id="email" required placeholder="Enter your email"
+                    aria-required="true" />
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label">Message:</label>
+                  <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-100" aria-label="Submit Form">
+                  <i class="fas fa-paper-plane me-2"></i>Submit
+                </button>
+              </form>
+              <div id="fullstack-result" class="mt-3 p-3 bg-light rounded" tabindex="0" aria-live="polite"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Key Components & Why Demo Matters -->
+        <div class="row demo-explanation">
+          <div class="col-md-6">
+            <h4><i class="fas fa-cubes me-2" aria-hidden="true"></i>Key Components</h4>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><strong>Frontend:</strong> HTML, CSS, JavaScript, React, Angular</li>
+              <li class="list-group-item"><strong>Backend:</strong> Node.js, Python (Django/Flask), Java, PHP</li>
+              <li class="list-group-item"><strong>Database:</strong> MySQL, MongoDB, PostgreSQL</li>
+              <li class="list-group-item"><strong>Version Control:</strong> Git & GitHub</li>
+              <li class="list-group-item"><strong>Deployment:</strong> Docker, AWS, Netlify, Vercel</li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <h4><i class="fas fa-info-circle me-2" aria-hidden="true"></i>Why Demo Matters</h4>
+            <p>This demo shows how user inputs are collected, validated, and sent to a backend server, simulating
+              database storage. It demonstrates dynamic
+              web application behavior and the integration of frontend, backend, and database technologies.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="horizontal-divider" role="separator" aria-hidden="true"></div>
+
+    <!-- Content Sections: frontend, backend, database, why-fullstack -->
+    <section id="frontend" class="content-section">
+      <div class="container">
+        <h2>What is Frontend Development (Client-Side)?</h2>
+        <p>The frontend is the part of a website or application that users directly see and interact with. It
+          encompasses everything from layouts, typography, buttons,
+          images, and color schemes to ensure an intuitive and visually appealing user experience.</p>
+        <h3>Tools & Technologies</h3>
+        <ul>
+          <li><strong>HTML:</strong> Forms the foundational structure of web pages, acting like a blueprint for content
+            organization.</li>
+          <li><strong>CSS:</strong> Enhances the visual appeal by adding styles, colors, spacing, and responsive layouts
+            to the HTML structure.</li>
+          <li><strong>JavaScript:</strong> Brings interactivity to life, enabling features like dropdown menus, modal
+            popups, and dynamic content updates without page reloads.</li>
+        </ul>
+        <p><strong>Example:</strong> On LinkedIn, the login form, navigation buttons, and profile layouts are all
+          powered by frontend technologies for a seamless user
+          interaction.</p>
+      </div>
+    </section>
+
+    <div class="horizontal-divider" role="separator" aria-hidden="true"></div>
+
+    <section id="backend" class="content-section">
+      <div class="container">
+        <h2>What is Backend Development (Server-Side)?</h2>
+        <p>The backend operates behind the scenes, handling data processing, business logic, and server-side operations
+          to ensure that user actions on the frontend lead
+          to the correct outcomes.</p>
+        <h3>Tools & Technologies</h3>
+        <ul>
+          <li><strong>Node.js:</strong> Allows JavaScript to run on the server, ideal for building fast and scalable
+            applications.</li>
+          <li><strong>Python:</strong> Known for its simplicity and versatility, commonly used in web development, data
+            analysis, and AI integrations.</li>
+          <li><strong>Java/PHP:</strong> Robust choices for enterprise-level applications or content management systems
+            like WordPress.</li>
+        </ul>
+        <p><strong>Example:</strong> When you submit a login on LinkedIn, the backend verifies your credentials against
+          stored data and responds with access or an error
+          message.</p>
+      </div>
+    </section>
+
+    <!-- Add horizontal divider -->
+    <div class="horizontal-divider" role="separator" aria-hidden="true"></div>
+
+    <section id="database" class="content-section">
+      <div class="container">
+        <h2>Database in Full Stack Development</h2>
+        <p>A database is essential for storing, organizing, and retrieving application data—ranging from user profiles
+          and preferences to content and transaction history—ensuring
+          data is accessible and secure whenever required.</p>
+        <div class="side-by-side">
+          <div class="key-components">
+            <h3>Key Components (Types of Databases)</h3>
+            <ul>
+              <li><strong>SQL (Relational):</strong> Organizes data in structured tables with rows and columns for
+                precise querying. Examples: MySQL, PostgreSQL.</li>
+              <li><strong>NoSQL (Non-Relational):</strong> Offers flexibility with unstructured data formats like JSON
+                documents or key-value pairs. Examples: MongoDB, Firebase.</li>
+            </ul>
+          </div>
+          <div class="why-matters">
+            <h3>Why Databases Matter</h3>
+            <ul>
+              <li>Efficient storage and rapid retrieval of data for smooth app performance.</li>
+              <li>Secure handling of user authentication and authorization processes.</li>
+              <li>Support for scaling applications as user bases grow.</li>
+              <li>Maintenance of data consistency, integrity, and security against threats.</li>
+            </ul>
+          </div>
+        </div>
+        <p><strong>Example:</strong> E-commerce platforms like Daraz use databases to remember your shopping cart, order
+          history, and personalized recommendations across
+          sessions.</p>
+      </div>
+    </section>
+
+    <div class="horizontal-divider" role="separator" aria-hidden="true"></div>
+
+    <section id="why-fullstack" class="content-section">
+      <div class="container">
+        <h2>Why is Full Stack Development Important?</h2>
+        <p>Full stack development empowers developers to build end-to-end solutions, bridging the gap between
+          user-facing designs and robust server infrastructures for more
+          efficient and innovative projects.</p>
+        <div class="reasons-grid">
+          <div class="reason-card">
+            <h4>High Demand</h4>
+            <p>Businesses value versatile developers who can manage both frontend and backend, reducing the need for
+              specialized teams.</p>
+          </div>
+          <div class="reason-card">
+            <h4>Flexibility</h4>
+            <p>Full stack developers can adapt to various roles, from UI design to server optimization, based on project
+              needs.</p>
+          </div>
+          <div class="reason-card">
+            <h4>Cost Effective</h4>
+            <p>Hiring one full stack expert often proves more economical than assembling separate frontend and backend
+              specialists.</p>
+          </div>
+          <div class="reason-card">
+            <h4>Better Understanding</h4>
+            <p>Comprehensive knowledge of the entire stack enhances collaboration with designers, testers, and
+              stakeholders for superior outcomes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="horizontal-divider" role="separator" aria-hidden="true"></div>
+
+    <section class="content-section">
+      <div class="container">
+        <h3 class="text-center mb-4">Full Stack Architecture</h3>
+        <div class="architecture-diagram">
+          <div class="row text-center mb-3">
+            <div class="col-md-12">
+              <h4><i class="fas fa-desktop me-2"></i>Client Side (Frontend)</h4>
+            </div>
+          </div>
+          <div class="row g-3">
+            <div class="col-md-4">
+              <div class="layer">
+                <h5>UI Components</h5>
+                <div>
+                  <span class="tech-badge">HTML</span>
+                  <span class="tech-badge">CSS</span>
+                  <span class="tech-badge">Bootstrap</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="layer">
+                <h5>Client Logic</h5>
+                <div>
+                  <span class="tech-badge">JavaScript</span>
+                  <span class="tech-badge">React</span>
+                  <span class="tech-badge">Vue</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="layer">
+                <h5>State Management</h5>
+                <div>
+                  <span class="tech-badge">Redux</span>
+                  <span class="tech-badge">Context API</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flow-arrow my-3">
+            <i class="fas fa-exchange-alt"></i>
+          </div>
+
+          <div class="row text-center mb-3">
+            <div class="col-md-12">
+              <h4><i class="fas fa-server me-2"></i>Server Side (Backend)</h4>
+            </div>
+          </div>
+          <div class="row g-3">
+            <div class="col-md-4">
+              <div class="layer">
+                <h5>Server</h5>
+                <div>
+                  <span class="tech-badge">Node.js</span>
+                  <span class="tech-badge">Express</span>
+                  <span class="tech-badge">Django</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="layer">
+                <h5>Database</h5>
+                <div>
+                  <span class="tech-badge">MongoDB</span>
+                  <span class="tech-badge">MySQL</span>
+                  <span class="tech-badge">PostgreSQL</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="layer">
+                <h5>API</h5>
+                <div>
+                  <span class="tech-badge">REST</span>
+                  <span class="tech-badge">GraphQL</span>
+                  <span class="tech-badge">JSON</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Add horizontal divider -->
+    <div class="horizontal-divider" role="separator" aria-hidden="true"></div>
+
+    <section class="content-section">
+      <div class="container">
+        <h3 class="text-center mb-4"><i class="fas fa-tasks me-2"></i>Development Process Timeline</h3>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><strong>Planning & Requirements:</strong> Gathering project requirements, defining
+            scope, and planning the architecture.</li>
+          <li class="list-group-item"><strong>UI/UX Design:</strong> Creating wireframes, mockups, and designing user
+            interfaces.</li>
+          <li class="list-group-item"><strong>Frontend Development:</strong> Implementing the client-side functionality
+            and user interactions.</li>
+          <li class="list-group-item"><strong>Backend Development:</strong> Building server, database, and API
+            infrastructure.</li>
+          <li class="list-group-item"><strong>Testing & Deployment:</strong> Testing the application and deploying to
+            production servers</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5" aria-label="Footer">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-md-4">
+            <h5 class="footer-heading">Contact</h5>
+            <div class="footer-contact">
+              <p><i class="fas fa-user"></i> Dhiraj Bhandari</p>
+              <p><i class="fas fa-envelope"></i> bwit24b.dhj@ismt.edu.np</p>
+              <p><i class="fas fa-phone"></i> +977 9845541670</p>
+              <p><i class="fas fa-map-marker-alt"></i> Butwal, Nepal</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <h5 class="footer-heading">Quick Links</h5>
+            <div class="footer-links d-flex flex-column">
+              <a href="fullstack.html">Full Stack Development</a>
+              <a href="html.html">HTML</a>
+              <a href="css.html" class="active">CSS</a>
+              <a href="bootstrap.html">Bootstrap</a>
+              <a href="js.html">JavaScript</a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <h5 class="footer-heading">Connect</h5>
+            <div class="social-links d-flex gap-3">
+              <a href="https://github.com/dhirubhaii" target="_blank" rel="noopener" title="GitHub"><i
+                  class="fab fa-github fa-lg"></i></a>
+              <a href="https://www.linkedin.com/in/dhirajbhandari-userprofile/" target="_blank" rel="noopener"
+                title="LinkedIn"><i class="fab fa-linkedin-in fa-lg"></i></a>
+              <a href="https://www.facebook.com/Dhirajbhandariii" target="_blank" rel="noopener" title="Facebook"><i
+                  class="fab fa-facebook-f fa-lg"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="copyright text-center mt-4 text-white-50">
+          <p>© <span id="year"></span> Dhiraj Bhandari. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top" aria-label="Back to top">
+      <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
